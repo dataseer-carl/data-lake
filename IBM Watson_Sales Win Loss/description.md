@@ -15,14 +15,14 @@ Understand your sales pipeline and uncover what can lead to successful sales opp
 
 | Use case | DS1 | Excel Ninja | AVDD | R | Unsupervised ML | Predictive Analytics |
 |:---------|:---:|:-----------:|:----:|:-:|:---------------:|:--------------------:|
-| [ ] Sales performance report |  | x | x | x |  |  |
-| [ ] Identify sales process thresholds |  | x |  | x |  | x |
-| [ ] Predict outcome of "open" opportunities |  |  |  |  |  | x |
+| - [ ] Sales performance report |  | x | x | x |  |  |
+| - [ ] Identify sales process thresholds |  | x |  | x |  | x |
+| - [ ] Predict outcome of "open" opportunities |  |  |  |  |  | x |
 
 ## Files
 
 | Filename | Columns | Rows | Size |
-|------|---------|------|------|
+|:---------|--------:|-----:|-----:|
 | WA_Fn-UseC_-Sales-Win-Loss.csv | 19 columns | 78,025 rows | 8,895,213 bytes |
 
 ## WA_Fn-UseC_-Sales-Win-Loss.csv
@@ -129,4 +129,4 @@ Sales process followed by data apparently as follows:
 
 > Identified/Validating &rarr; Validated/Qualifying &rarr; Qualified/Gaining Agreement &rarr; Closing
 
-Data lacks dates, customer IDs, and sales rep IDs.
+Not as realistic given lack of dates, customer IDs, and sales rep IDs.
