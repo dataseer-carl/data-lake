@@ -6,9 +6,11 @@
 
 > Understand your sales pipeline and uncover what can lead to successful sales opportunities and better anticipate performance gaps.
 
-## Sense Check
+## Sanity Checks
 
 - [ ] Duplicate *Opportunity Number*s
+- [ ] Missing values
+- [ ] Outlying/typo values
 - [ ] Check if *Ratio Days\** columns add to 100%
 
 ## Cases
@@ -16,7 +18,7 @@
 | Use case | DS1 | Excel Ninja | AVDD | R | Unsupervised ML | Predictive Analytics |
 |:---------|:---:|:-----------:|:----:|:-:|:---------------:|:--------------------:|
 | [ ] Sales performance report |  | x | x | x |  |  |
-| [ ] Identify sales process thresholds |  | x |  | x |  | x |
+| [ ] Identify sales process thresholds | x | x |  | x |  | x |
 | [ ] Predict outcome of "open" opportunities |  |  |  |  |  | x |
 
 ## Files
