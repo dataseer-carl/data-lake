@@ -2,9 +2,9 @@
 
 # IBM Watson Sales Win Loss
 
-Understand your sales pipeline and uncover what can lead to successful sales opportunities and better anticipate performance gaps.
-
 [**Source**](https://www.ibm.com/communities/analytics/watson-analytics-blog/guide-to-sample-datasets/) | [**Description**](https://www.ibm.com/communities/analytics/watson-analytics-blog/sales-win-loss-sample-dataset/) | [**Download**](https://community.watsonanalytics.com/wp-content/uploads/2015/04/WA_Fn-UseC_-Sales-Win-Loss.csv)
+
+> Understand your sales pipeline and uncover what can lead to successful sales opportunities and better anticipate performance gaps.
 
 ## Sense Check
 
@@ -15,9 +15,9 @@ Understand your sales pipeline and uncover what can lead to successful sales opp
 
 | Use case | DS1 | Excel Ninja | AVDD | R | Unsupervised ML | Predictive Analytics |
 |:---------|:---:|:-----------:|:----:|:-:|:---------------:|:--------------------:|
-| - [ ] Sales performance report |  | x | x | x |  |  |
-| - [ ] Identify sales process thresholds |  | x |  | x |  | x |
-| - [ ] Predict outcome of "open" opportunities |  |  |  |  |  | x |
+| [ ] Sales performance report |  | x | x | x |  |  |
+| [ ] Identify sales process thresholds |  | x |  | x |  | x |
+| [ ] Predict outcome of "open" opportunities |  |  |  |  |  | x |
 
 ## Files
 
@@ -84,21 +84,21 @@ Understand your sales pipeline and uncover what can lead to successful sales opp
 	- **2**: [\$1m, \$10m)
 	- **3**: [\$10m, \$50m)
 	- **4**: [\$50m, \$100m)
-	- **5**: $\ge$ \$100m
+	- **5**: &ge; \$100m
 * __Client Size By Employee Count__<br/>
 	Client sized by number of employees. Values are:
 	- **1**: < 1k
 	- **2**: [1k, 5k)
 	- **3**: [5k, 10k)
 	- **4**: [10k, 30k)
-	- **5**: $\ge$ 30k
+	- **5**: &ge; 30k
 * __Revenue From Client Past Two Years__<br/>
 	Revenue identified from this client in past two years
 	- **0**: none
 	- **1**: [\$1, \$50k) 
 	- **2**: [\$50k, \$400k) 
 	- **3**: [\$400k, \$1.5m) 
-	- **4**: $\ge$ \$1.5m
+	- **4**: &ge; \$1.5m
 * __Competitor Type__<br/>
 	An indicator if a competitor has been identified. Values: *Known*, *Unknown*, *None*.
 * __Ratio Days Identified To Total Days__<br/>
@@ -115,7 +115,7 @@ Understand your sales pipeline and uncover what can lead to successful sales opp
 	- **4**: [\$50k, \$100k)
 	- **5**: [\$100k, \$250k)
 	- **6**: [\$250k, \$500k)
-	- **7**: $\ge$ \$500k
+	- **7**: &ge; \$500k
 
 ### Sample
 
