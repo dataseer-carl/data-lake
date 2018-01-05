@@ -33,4 +33,4 @@ root/
 
 ## Data
 
-* [Sales Win Loss](./IBM Watson_Sales Win Loss/description.md) |
+[Sales Win Loss](./IBM Watson_Sales Win Loss/description.md) |
