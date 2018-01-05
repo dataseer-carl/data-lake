@@ -36,3 +36,5 @@ root/
 [Sales Win Loss](IBM%20Watson_Sales%20Win%20Loss/description.md)
 
 [Banking Loss Events](IBM%20Watson_Banking%20Loss%20Events/description.md)
+
+[IT Help Desk](IBM%20Watson_IT%20Help%20Desk/description.md)
