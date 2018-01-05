@@ -122,7 +122,7 @@
 ### Sample
 
 | Opportunity Number | Supplies Subgroup | Supplies Group | Region | Route To Market | Elapsed Days In Sales Stage | Opportunity Result | Sales Stage Change Count | Total Days Identified Through Closing | Total Days Identified Through Qualified | Opportunity Amount USD | Client Size By Revenue | Client Size By Employee Count | Revenue From Client Past Two Years | Competitor Type | Ratio Days Identified To Total Days | Ratio Days Validated To Total Days | Ratio Days Qualified To Total Days | Deal Size Category |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|:--|:--|:--|:--|:-:|--:|:-:|--:|--:|--:|--:|:-:|:-:|:-:|:-:|--:|--:|--:|:-:|
 | 1641984	| Exterior Accessories | Car Accessories | Northwest | Fields Sales | 76 | Won | 13 | 104 | 101 | 0 | 5 | 5 | 0 | Unknown | 0.69636 | 0.113985 | 0.154215 | 1 |
 
 ## Notes
