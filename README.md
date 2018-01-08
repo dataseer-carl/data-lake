@@ -41,4 +41,4 @@ root/
 
 [HR Employee Attrition](IBM%20Watson_HR%20Employee%20Attrition/description.md)
 
-[The Complete Journey](dunhumby_The-Complete-Journey/description.md)
+[The Complete Journey](dunnhumby_The-Complete-Journey/description.md)
