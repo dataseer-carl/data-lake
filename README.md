@@ -38,3 +38,5 @@ root/
 [Banking Loss Events](IBM%20Watson_Banking%20Loss%20Events/description.md)
 
 [IT Help Desk](IBM%20Watson_IT%20Help%20Desk/description.md)
+
+[HR Employee Attrition](IBM%20Watson_HR%20Employee%20Attrition/description.md)

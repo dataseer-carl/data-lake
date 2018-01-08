@@ -78,4 +78,4 @@ Some cells in xlsx-file use formula.
 
 What is chronology of **Status**?
 
-What is **Estimated Gross Loss** vs. **Net Loss**?
+What is **Estimated Gross Loss** vs. **Net Loss**?  *Net loss* is supposed to be *gross loss* less *recoveries*.
