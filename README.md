@@ -10,7 +10,7 @@ Note that the documentation in the markdown files in each data source pertains o
 ```
 root/
 |- Datasets/
-|	|- description.md
+|	|- readme.md
 |	|- Raw/
 |	|	|- ...
 |	|- Data/
