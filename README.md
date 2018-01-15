@@ -24,7 +24,7 @@ root/
 ```	
 ### Items
 
-* *description.md*<br/>
+* *readme.md*<br/>
 	Documentation pertaining to data source and data files per se.
 * **Raw/**<br/>
 	Contains the raw files from which the data are read from.
