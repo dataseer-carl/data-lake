@@ -45,6 +45,10 @@
 |---|---|---|---|---|---|---|---|---|---|
 | 1 | 1929 | 1 - Junior | 50 | Systems | Issue | 2 - Normal | 0 - Unassigned | 3 | 1 - Unsatisfied |
 
+#### Remarks
+
+Lacks entries for open tickets.
+
 ## Sanity Checks
 
 - [ ] Duplicate *ticket*s
