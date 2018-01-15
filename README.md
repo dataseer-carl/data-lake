@@ -1,5 +1,9 @@
-# data-lake
-DataSeer's data lake for datasets used in the data courses.
+# DataLake
+DataSeer's data lake for datasets used in content development.
+
+For details on how the DataLake is used, please refer to the [wiki](https://github.com/dataseer-carl/data-lake/wiki).
+
+Note that the documentation in the markdown files in each data source pertains only to the data source or data files per se.
 
 ## Directory structure
 
@@ -21,7 +25,7 @@ root/
 ### Items
 
 * *description.md*<br/>
-	Description file of data.
+	Documentation pertaining to data source and data files per se.
 * **Raw/**<br/>
 	Contains the raw files from which the data are read from.
 * **Scripts/**<br/>
@@ -30,15 +34,3 @@ root/
 	Processed datasets produced by the scripts.
 * **Docs/**<br/>
 	Other files from the same source pertinent to the data (e.g. data dictionary).
-
-## Data
-
-[Sales Win Loss](IBM%20Watson_Sales%20Win%20Loss/description.md)
-
-[Banking Loss Events](IBM%20Watson_Banking%20Loss%20Events/description.md)
-
-[IT Help Desk](IBM%20Watson_IT%20Help%20Desk/description.md)
-
-[HR Employee Attrition](IBM%20Watson_HR%20Employee%20Attrition/description.md)
-
-[The Complete Journey](dunnhumby_The-Complete-Journey/description.md)
