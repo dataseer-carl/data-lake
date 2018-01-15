@@ -6,30 +6,15 @@
 
 > Understand your sales pipeline and uncover what can lead to successful sales opportunities and better anticipate performance gaps.
 
-## Sanity Checks
-
-- [ ] Duplicate *Opportunity Number*s
-- [ ] Missing values
-- [ ] Outlying/typo values
-- [ ] Check if *Ratio Days\** columns add to 100%
-
-## Cases
-
-| Use case | DS1 | Excel Ninja | AVDD | R | Unsupervised ML | Predictive Analytics |
-|:---------|:---:|:-----------:|:----:|:-:|:---------------:|:--------------------:|
-| [ ] Sales performance report |  | x | x | x |  |  |
-| [ ] Identify sales process thresholds | x | x |  | x |  | x |
-| [ ] Predict outcome of "open" opportunities |  |  |  |  |  | x |
-
 ## Files
 
 | Filename | Columns | Rows | Size |
 |:---------|--------:|-----:|-----:|
 | WA_Fn-UseC_-Sales-Win-Loss.csv | 19 columns | 78,025 rows | 8,895,213 bytes |
 
-## WA_Fn-UseC_-Sales-Win-Loss.csv
+### WA_Fn-UseC_-Sales-Win-Loss.csv
 
-### Schema
+#### Schema
 
 * __Opportunity Number__<br/>
 	A unique generated number assigned to the opportunity.
@@ -119,16 +104,23 @@
 	- **6**: [\$250k, \$500k)
 	- **7**: &ge; \$500k
 
-### Sample
+#### Sample
 
 | Opportunity Number | Supplies Subgroup | Supplies Group | Region | Route To Market | Elapsed Days In Sales Stage | Opportunity Result | Sales Stage Change Count | Total Days Identified Through Closing | Total Days Identified Through Qualified | Opportunity Amount USD | Client Size By Revenue | Client Size By Employee Count | Revenue From Client Past Two Years | Competitor Type | Ratio Days Identified To Total Days | Ratio Days Validated To Total Days | Ratio Days Qualified To Total Days | Deal Size Category |
 |:--|:--|:--|:--|:-:|--:|:-:|--:|--:|--:|--:|:-:|:-:|:-:|:-:|--:|--:|--:|:-:|
 | 1641984	| Exterior Accessories | Car Accessories | Northwest | Fields Sales | 76 | Won | 13 | 104 | 101 | 0 | 5 | 5 | 0 | Unknown | 0.69636 | 0.113985 | 0.154215 | 1 |
 
-## Notes
+#### Remarks
 
 Sales process followed by data apparently as follows:
 
 > Identified/Validating &rarr; Validated/Qualifying &rarr; Qualified/Gaining Agreement &rarr; Closing
 
 Not as realistic given lack of dates, customer IDs, and sales rep IDs.
+
+## Sanity Checks
+
+- [ ] Duplicate *Opportunity Number*s
+- [ ] Missing values
+- [ ] Outlying/typo values
+- [ ] Check if *Ratio Days\** columns add to 100%

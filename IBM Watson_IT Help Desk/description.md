@@ -8,28 +8,15 @@
 >
 > This data is from an Information Technology (IT) department interested in examining how quickly issues are resolved and improving satisfaction of customers.  To start their analysis, they have this data set of 100,000 closed tickets that were filed at their help desk.
 
-## Sanity Checks
-
-- [ ] Duplicate *ticket*s
-- [ ] Missing values
-- [ ] Outlying/typo values
-
-## Cases
-
-| Use case | DS1 | Excel Ninja | AVDD | R | Unsupervised ML | Predictive Analytics |
-|:---------|:---:|:-----------:|:----:|:-:|:---------------:|:--------------------:|
-| [ ] Performance report |  | x | x | x |  |  |
-| [ ] Customer WL/ employee BL |  | x | x | x |  |  |
-
 ## Files
 
 | Filename | Columns | Rows | Size |
 |:---------|--------:|-----:|-----:|
 | WA_Fn-UseC_-IT-Help-Desk.csv | 10 columns | 100,000 rows | 8,372,702 bytes |
 
-## WA_Fn-UseC_-IT-Help-Desk.csv
+### WA_Fn-UseC_-IT-Help-Desk.csv
 
-### Schema
+#### Schema
 
 * __ticket__<br/>
 	Ticket ID
@@ -52,12 +39,14 @@
 * __Satisfaction__<br/>
 	Satisfaction with the resolution of the ticket (reported by the submitter).
 
-### Sample
+#### Sample
 
 | ticket | requestor | RequestorSeniority | ITOwner | FiledAgainst | TicketType | Severity | Priority | daysOpen | Satisfaction |
 |---|---|---|---|---|---|---|---|---|---|
 | 1 | 1929 | 1 - Junior | 50 | Systems | Issue | 2 - Normal | 0 - Unassigned | 3 | 1 - Unsatisfied |
 
-## Notes
+## Sanity Checks
 
-Not as realistic given lack of dates and descriptions.
+- [ ] Duplicate *ticket*s
+- [ ] Missing values
+- [ ] Outlying/typo values

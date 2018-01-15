@@ -8,28 +8,6 @@
 > * All of a household’s purchases within the store, not just those from a limited number of categories
 > * Demographics and direct marketing contact history for select households
 
-## Sanity Checks
-
-- [ ] Duplicates
-- [ ] Missing values
-- [ ] Outlying/typo values
-- [ ] Consistency of *Campaign ID*-*Campaign description* pairs
-- [ ] Consistency of *Day* - *Week No* pairs
-- [ ] Change in unit prices across period
-- [ ] Campaign schedule
-- [ ] *Commodity description* consistency
-
-## Cases
-
-| Use case | DS1 | Excel Ninja | AVDD | R | Unsupervised ML | Predictive Analytics |
-|:---------|:---:|:-----------:|:----:|:-:|:---------------:|:--------------------:|
-| [ ] Master dataset curation |  |  |  | x |  |  |
-| [ ] BI |  |  | x | x |  |  |
-| [ ] Sanity checks |  |  |  | x |  |  |
-| [ ] A/B Testing |  |  |  |  |  | x |
-| [ ] Market basket |  |  |  |  | x |  |
-| [ ] Store cycle characterization |  |  |  |  | x |  |
-
 ## Files
 
 | Filename | Columns | Rows | Size |
@@ -43,11 +21,11 @@
 | product.csv | 7 columns | 92,353 rows | 6,429,896 bytes |
 | transaction_data.csv | 12 columns | 2,595,732 rows | 141,742,346 bytes |
 
-## campaign_desc.csv
+### campaign_desc.csv
 
 Campaign schedule.
 
-### Schema
+#### Schema
 
 * __DESCRIPTION__<br/>
 	Campaign type: *TypeA*, *TypeB*, or *TypeC*.
@@ -58,17 +36,17 @@ Campaign schedule.
 * __END_DAY__<br/>
 	End date of campaign.
 
-### Sample
+#### Sample
 
 | DESCRIPTION | CAMPAIGN | START_DAY | END_DAY |
 |:--|:--|--:|--:|
 | TypeB | 24 | 659 | 719 |
 
-## campaign_table.csv
+### campaign_table.csv
 
 Campaign whitelist.
 
-### Schema
+#### Schema
 
 * __DESCRIPTION__<br/>
 	Campaign type: *TypeA*, *TypeB*, or *TypeC*.
@@ -77,17 +55,17 @@ Campaign whitelist.
 * __CAMPAIGN__<br/>
 	Campaign ID.  Ranges 1--30.
 
-### Sample
+#### Sample
 
 | DESCRIPTION | household_key | CAMPAIGN |
 |:--|:--|:--|
 | TypeA | 17 | 26 |
 
-## causal_data.csv
+### causal_data.csv
 
 Campaign implementation details.
 
-### Schema
+#### Schema
 
 * __PRODUCT_ID__<br/>
 	Product ID
@@ -121,17 +99,17 @@ Campaign implementation details.
 	- **X** - Free on interior page
 	- **Z** - Free on front page, back page or wrap
 
-### Sample
+#### Sample
 
 | PRODUCT_ID | STORE_ID | WEEK_NO | display | mailer |
 |:--|:--|:-:|:--|:--|
 | 26190 | 286 | 70 | 0 | A |
 
-## coupon.csv
+### coupon.csv
 
 Campaign and coupon inclusion.
 
-### Schema
+#### Schema
 
 * __COUPON_UPC__<br/>
 	Coupon ID.  Unique to household and campaign.
@@ -140,17 +118,17 @@ Campaign and coupon inclusion.
 * __CAMPAIGN__<br/>
 	Campaign ID.  Ranges 1--30.
 
-### Sample
+#### Sample
 
 | COUPON_UPC | PRODUCT_ID | CAMPAIGN |
 |:--|:--|:--|
 | 10000089061 | 27160 | 4 |
 
-## coupon_redempt.csv
+### coupon_redempt.csv
 
 Coupon redemption history.
 
-### Schema
+#### Schema
 
 * __household_key__<br/>
 	Household ID
@@ -161,17 +139,17 @@ Coupon redemption history.
 * __CAMPAIGN__<br/>
 	Campaign ID.  Ranges 1--30.
 
-### Sample
+#### Sample
 
 | household_key | DAY | COUPON_UPC | CAMPAIGN |
 |:--|--:|:--|:--|
 | 1 | 421 | 10000085364 | 8 |
 
-## hh_demographic.csv
+### hh_demographic.csv
 
 Household demographics.
 
-### Schema
+#### Schema
 
 * __AGE_DESC__<br/>
 	Estimated age range.
@@ -193,17 +171,17 @@ Household demographics.
 * __household_key__<br/>
 	Household ID
 
-### Sample
+#### Sample
 
 | AGE_DESC | MARITAL_STATUS_CODE | INCOME_DESC | HOMEOWNER_DESC | HH_COMP_DESC | HOUSEHOLD_SIZE_DESC | KID_CATEGORY_DESC | household_key |
 |:-:|:-:|:-:|:--|:--|--:|--:|:--|
 | 65+ | A | 35-49K | Homeowner | 2 Adults No Kids | 2 | None/Unknown | 1 |
 
-## product.csv
+### product.csv
 
 Product reference.
 
-### Schema
+#### Schema
 
 * __PRODUCT_ID__<br/>
 	Product ID
@@ -220,17 +198,17 @@ Product reference.
 * __CURR_SIZE_OF_PRODUCT__<br/>
 	Product "serving size"
 
-### Sample
+#### Sample
 
 | PRODUCT_ID | MANUFACTURER | DEPARTMENT | BRAND | COMMODITY_DESC | SUB_COMMODITY_DESC | CURR_SIZE_OF_PRODUCT |
 |:--|:--|:-:|:--|:--|:--|--:|
 | 25671 | 2 | GROCERY | National | FRZN ICE | ICE - CRUSHED/CUBED | 22 LB |
 
-## transaction_data.csv
+### transaction_data.csv
 
 Transaction data; per item sale.
 
-### Schema
+#### Schema
 
 * __household_key__<br/>
 	Household ID
@@ -257,14 +235,25 @@ Transaction data; per item sale.
 * __COUPON_MATCH_DISC__<br/>
 	*Above the line* discount; discount applied due to retailer's match of manufacturer coupon
 
-### Sample
+#### Sample
 
 | household_key | BASKET_ID | DAY | PRODUCT_ID | QUANTITY | SALES_VALUE | STORE_ID | RETAIL_DISC | TRANS_TIME | WEEK_NO | COUPON_DISC | COUPON_MATCH_DISC |
 |:--|:--|:-:|:--|--:|--:|:--|--:|:-:|:-:|--:|--:|
 | 2375 | 26984851472 | 1 | 1004906 | 1 | 1.39 | 364 | -0.6 | 1631 | 1 | 0 | 0 |
 
-## Notes
+## Remarks
 
 Raw data files to be hosted outside of GitHub since too large for pull-push.
 
 Not as realistic given lack of actual dates (for seasonality), store location, etc.
+
+## Sanity Checks
+
+- [ ] Duplicates
+- [ ] Missing values
+- [ ] Outlying/typo values
+- [ ] Consistency of *Campaign ID*-*Campaign description* pairs
+- [ ] Consistency of *Day* - *Week No* pairs
+- [ ] Change in unit prices across period
+- [ ] Campaign schedule
+- [ ] *Commodity description* consistency

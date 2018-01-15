@@ -6,92 +6,88 @@
 
 > Find out the leading drivers of Employee Attrition. Track and analyze employee satisfaction and retain valuable employees.
 
-## Sanity Checks
-
-- [ ] Duplicate *EmployeeNumber*s
-- [ ] Missing values
-- [ ] Outlying/typo values
-- [ ] Check relationships among *DailyRate*, *HourlyRate*, *MonthlyRate*, and *MonthlyIncome*
-
-## Cases
-
-| Use case | DS1 | Excel Ninja | AVDD | R | Unsupervised ML | Predictive Analytics |
-|:---------|:---:|:-----------:|:----:|:-:|:---------------:|:--------------------:|
-| [ ] Employee segmentation |  |  |  |  | x |  |
-| [ ] Employee turnover |  |  |  |  |  | x |
-| [ ] Salary benchmarking |  |  |  |  |  | x |
-| [ ] BI | x | x | x | x |  |  |
-
 ## Files
 
 | Filename | Columns | Rows | Size |
 |:---------|--------:|-----:|-----:|
 | WA_Fn-UseC_-HR-Employee-Attrition.csv | 35 columns | 1,470 rows | 227,977 bytes |
 
-## WA_Fn-UseC_-HR-Employee-Attrition.csv
+### WA_Fn-UseC_-HR-Employee-Attrition.csv
 
-### Schema
+#### Schema
 
-* __Age__<br/>
-* __Attrition__<br/>
+* __Age__: Employee age
+* __Attrition__: Has employee left the company: *Yes*, *No*
 * __BusinessTravel__<br/>
+	- *Travel_Frequently*
+	- *Travel_Rarely*
+	- *Non-travel*
 * __DailyRate__<br/>
 * __Department__<br/>
+	- *Sales*
+	- *Research & Development*
+	- *Human Resources*
 * __DistanceFromHome__<br/>
 * __Education__<br/>
-	- **1** 'Below College'
-	- **2** 'College'
-	- **3** 'Bachelor'
-	- **4** 'Master'
-	- **5** 'Doctor'
+	- *1* 'Below College'
+	- *2* 'College'
+	- *3* 'Bachelor'
+	- *4* 'Master'
+	- *5* 'Doctor'
 * __EducationField__<br/>
-* __EmployeeCount__<br/>
-* __EmployeeNumber__<br/>
+	- *Human Resources*
+	- *Life Sciences*
+	- *Marketing*
+	- *Medical*
+	- *Technical degree*
+	- *Other*
+* __EmployeeCount__: Dummy column
+* __EmployeeNumber__: Employee ID
 * __EnvironmentSatisfaction__<br/>
-	- **1** 'Low'
-	- **2** 'Medium'
-	- **3** 'High'
-	- **4** 'Very high'
-* __Gender__<br/>
+	- *1* 'Low'
+	- *2* 'Medium'
+	- *3* 'High'
+	- *4* 'Very high'
+* __Gender__: *Male*, *Female*
 * __HourlyRate__<br/>
 * __JobInvolvement__<br/>
-	- **1** 'Low'
-	- **2** 'Medium'
-	- **3** 'High'
-	- **4** 'Very high'
-* __JobLevel__<br/>
-* __JobRole__<br/>
+	- *1* 'Low'
+	- *2* 'Medium'
+	- *3* 'High'
+	- *4* 'Very high'
+* __JobLevel__: Ranges from 1--5
+* __JobRole__: Job title
 * __JobSatisfaction__<br/>
-	- **1** 'Low'
-	- **2** 'Medium'
-	- **3** 'High'
-	- **4** 'Very high'
-* __MaritalStatus__<br/>
+	- *1* 'Low'
+	- *2* 'Medium'
+	- *3* 'High'
+	- *4* 'Very high'
+* __MaritalStatus__: *Single*, *Married*, *Divorced*
 * __MonthlyIncome__<br/>
 * __MonthlyRate__<br/>
 * __NumCompaniesWorked__<br/>
-* __Over18__<br/>
-* __OverTime__<br/>
+* __Over18__: All *Yes*
+* __OverTime__: *Yes*, *No*
 * __PercentSalaryHike__<br/>
 * __PerformanceRating__<br/>
-	- **1** 'Low'
-	- **2** 'Good'
-	- **3** 'Excellent'
-	- **4** 'Outstanding'
+	- *1* 'Low'
+	- *2* 'Good'
+	- *3* 'Excellent'
+	- *4* 'Outstanding'
 * __RelationshipSatisfaction__<br/>
-	- **1** 'Low'
-	- **2** 'Medium'
-	- **3** 'High'
-	- **4** 'Very high'
-* __StandardHours__<br/>
-* __StockOptionLevel__<br/>
+	- *1* 'Low'
+	- *2* 'Medium'
+	- *3* 'High'
+	- *4* 'Very high'
+* __StandardHours__: All *80*
+* __StockOptionLevel__: Ranges 0--3
 * __TotalWorkingYears__<br/>
 * __TrainingTimesLastYear__<br/>
 * __WorkLifeBalance__<br/>
-	- **1** 'Bad'
-	- **2** 'Good'
-	- **3** 'Better'
-	- **4** 'Best'
+	- *1* 'Bad'
+	- *2* 'Good'
+	- *3* 'Better'
+	- *4* 'Best'
 * __YearsAtCompany__<br/>
 * __YearsInCurrentRole__<br/>
 * __YearsSinceLastPromotion__<br/>
@@ -103,8 +99,9 @@
 |--:|:-:|:-:|--:|:--|--:|:-:|:--|--:|:-:|:-:|:-:|--:|:-:|:-:|:--|:-:|:-:|--:|--:|--:|:-:|:-:|--:|:-:|:-:|--:|:-:|--:|--:|:-:|--:|--:|--:|--:|
 | 41 | Yes | Travel_Rarely | 1102 | Sales | 1 | 2 | Life Sciences | 1 | 1 | 2 | Female | 94 | 3 | 2 | Sales Executive | 4 | Single | 5993 | 19479 | 8 | Y | Yes | 11 | 3 | 1 | 80 | 0 | 8 | 0 | 1 | 6 | 4 | 0 | 5 |
 
-## Notes
+## Sanity Checks
 
-Not as realistic given lack of dates.
-
-More ideal if it contains per posting and reporting lines instead of most recent snapshot of employee.
+- [ ] Duplicate *EmployeeNumber*s
+- [ ] Missing values
+- [ ] Outlying/typo values
+- [ ] Disambiguate *DailyRate*, *HourlyRate*, *MonthlyRate*, and *MonthlyIncome*
