@@ -124,4 +124,4 @@ Not as realistic given lack of dates, customer IDs, and sales rep IDs.
 - [ ] Missing values
 - [ ] Outlying/typo values
 - [ ] Check if *Ratio Days\** columns add to 100%
-- [ ] Check if **Total Days Identified Through Closing** always longer than **Total Days Identified Through Qualified**
+- [ ] Check if *Total Days Identified Through Closing* always longer than *Total Days Identified Through Qualified*
