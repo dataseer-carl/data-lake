@@ -93,5 +93,5 @@ Another [source](http://www.ypf.com/english/investors/Paginas/Credit-Ratings.asp
 
 ## Sanity Checks
 
-- [ ] Consistent *Date* format
-- [x] Unique entries per date per country: *more than one entry for Cyprus, Jamaica, and Libya*
+- [x] Unique rating change entries per date per country: *more than one entry for Cyprus, Jamaica, and Libya*
+- [x] Consistent rating scales: *legacy default ratings, typos (`i`, `f3`)*
